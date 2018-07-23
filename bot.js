@@ -52,21 +52,10 @@ if (message.content.startsWith(adminprefix + 'st')) {
  
  // help
  
-   client.on("message", message => {
-	var prefix ='.';
-     if (message.content === prefix + "help") {
-         message.react('👌')
-         if(!message.channel.guild) return message.reply('** This command only for servers **');
-	 message.reply(" ** Check Your DM | **:white_check_mark: ** | شوف خاصكك ي حلو ** ")
-     }
-});
-//
 client.on("message", message => {
-	var prefix = '.';
- if (message.content === prefix + "help") {
-  const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-      .setThumbnail(message.author.avatarURL)
+ if (message.content === `.help`) {
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000")
       .setDescription(`
 
 ** Bot ${client.user.username} Commands **
@@ -114,13 +103,12 @@ client.on("message", message => {
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ●
 **
-`)
 
-
-message.author.sendEmbed(embed)
-
-}
-});
+ `)
+   message.channel.sendEmbed(embed)
+    
+   }
+   }); 
 
  
  // الإنفايت
