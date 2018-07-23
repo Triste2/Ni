@@ -432,24 +432,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
 
 
  
-// كود الرابط
- 
-    client.on('message', message => {
-    if (!message.guild) return; 
-    if (message.content.startsWith("رابط")) {
 
-        message.channel.createInvite({
-        thing: true,
-        maxUses: 1,
-        maxAge: 86400
-    }).then(invite =>
-      message.author.sendMessage(invite.url)
-    )
-  message.channel.send(`** تم أرسال الرابط برسالة خاصة **`)
-
-      message.author.send(`** https://discord.gg/gzNSSUq **`)
-	  }
-});
 
 
 
