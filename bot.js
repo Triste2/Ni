@@ -447,7 +447,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
     )
   message.channel.send(`** تم أرسال الرابط برسالة خاصة **`)
 
-      message.author.send(`**هذا الرابط لشخص واحد و لمدة 24 ساعة **`)
+      message.author.send(`** https://discord.gg/gzNSSUq **`)
 	  }
 });
 
